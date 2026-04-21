@@ -27,9 +27,9 @@ body {
   height: 22px;
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 18px;
-  line-height: 1;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .header__links-list {
@@ -54,15 +54,14 @@ body {
 .header__logo {
   grid-area: header__logo;
   display: block;
+}
+
+.header__logo-image {
   width: 148px;
   height: 105px;
 }
 
-.header__address {
-  grid-area: header__address;
-  max-width: 240px;
-  height: 98px;
-  justify-self: end;
+.address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -70,15 +69,22 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.35;
-  letter-spacing: 0;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+}
+
+.header__address {
+  grid-area: header__address;
+  max-width: 240px;
+  height: 98px;
+  justify-self: end;
 }
 
 .tel, 
 .mail {
   white-space: nowrap;
   text-decoration: none;
-  border-bottom: 2px solid rgb(0 0 0);
+  border-bottom: 1px solid rgb(0 0 0);
 }
 
 .main {
@@ -113,11 +119,10 @@ body {
   row-gap: 20px;
   font-family: Raleway;
   font-weight: 700;
-  font-style: bold;
   font-size: 100px;
   color: rgb(255 255 255);
   text-transform: uppercase;
-  line-height: 1.15;
+  line-height: 114.99999999999999%;
   letter-spacing: 30%;
 }
 
@@ -157,7 +162,6 @@ body {
   align-self: center;
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 22px;
   line-height: 28px;
   word-spacing: 18px;
@@ -184,17 +188,15 @@ body {
 .lots {
   margin: 180px 24px 120px;
   width: 1052px;
-  height: 723px;
 }
 
 .lots__heading {
-  padding: 0px 40px 27px 40px;
+  padding: 5px 40px 29px 40px;
   font-family: Raleway;
   font-weight: 700;
-  font-style: bold;
   font-size: 40px;
-  line-height: 1;
-  letter-spacing: 0;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: rgb(0 0 0);
   text-transform: uppercase;
 }
@@ -250,7 +252,6 @@ body {
   z-index: 2;
   font-family: Raleway;
   font-weight: 700;
-  font-style: bold;
   font-size: 22px;
   line-height: 1.2;
   letter-spacing: 0;
@@ -264,7 +265,6 @@ body {
   z-index: 2;
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 20px;
   color: rgb(255 255 255);
   line-height: 1.2;
@@ -275,7 +275,6 @@ body {
   padding: 33px 40px 0px;
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 20px;
   color: rgb(0 0 0);
   line-height: 1;
@@ -283,11 +282,10 @@ body {
 }
 
 .about {
-  min-height: 595px;
+  margin: 120px 24px 0px;
 }
 
 .about__column {
-  margin: 120px 24px 180px;
   width: 1052px;
   display: grid;
   grid-template-areas:
@@ -313,39 +311,43 @@ body {
   width: 148px;
   height: 114px;
 }
-
+ 
 .about__content {
   grid-area: about__content;
-  padding-top: 133px;
+  padding-top: 134px;
+  box-sizing: border-box;
 }
 
 .about__title {
+  padding-top: 4px;
+  box-sizing: border-box;
   font-family: Raleway;
   font-weight: 700;
-  font-style: bold;
   font-size: 40px;
   color: rgb(0 0 0);
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 100%;
   letter-spacing: 0;
 }
 
 .about__text {
-  padding: 97px 0px 13px 0px;
+  padding: 105px 0px 0px 0px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 24px;
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 20px;
   color: rgb(0 0 0);
-  letter-spacing: 0;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 
 .footer {
-  margin: 0 auto;
+  margin: 190px 0px 0px 0px;
   padding: 0px 50px;
+  box-sizing: border-box;
   width: 100%;
   height: 180px;
   display: grid;
@@ -353,6 +355,13 @@ body {
   "header__address footer__menu footer__social-list";
   justify-content: space-between;
   align-content: start;
+}
+
+.footer__address {
+  grid-area: header__address;
+  max-width: 264.57px;
+  height: 98px;
+  justify-self: start;
 }
 
 .footer__menu {
@@ -370,11 +379,10 @@ body {
 .footer__menu-list-item {
   font-family: Raleway;
   font-weight: 400;
-  font-style: normal;
   font-size: 18px;
   color: rgb(0 0 0);
-  line-height: 1;
-  letter-spacing: 0;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .footer__menu-link_active {
