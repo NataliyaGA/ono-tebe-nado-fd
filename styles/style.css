@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  font-family: Raleway, Inter, Arial, sans-serif;
 }
 
 .header {
@@ -76,13 +77,6 @@ body {
   max-width: 240px;
 }
 
-.tel,
-.mail {
-  border-bottom: 1px solid rgb(0 0 0);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
 .main {
   flex-grow: 1;
   width: 100%;
@@ -108,10 +102,8 @@ body {
 }
 
 .cover_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 21.5px;
+  position: relative;
+  z-index: 2;
   padding: 165px 50px 106px 50px;
   color: rgb(255 255 255);
   font-family: Raleway;
@@ -122,30 +114,23 @@ body {
   text-transform: uppercase;
 }
 
-.ono {
-  z-index: 2;
-  display: flex;
-  justify-content: start;
-}
-
-.tebe {
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  transform: translateX(15px);
-}
-
-.nado {
-  z-index: 2;
-  display: flex;
-  justify-content: end;
+.aligned-text_center {
+  display: block;
   margin-right: -30px;
+  padding-top: 21.5px;
+  padding-bottom: 21.5px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  margin-right: -30px;
+  text-align: right;
 }
 
 .cover_description {
   display: flex;
   justify-content: space-between;
-  min-height: 51px;
   padding: 0px 50px 50px 50px;
 }
 
@@ -165,8 +150,9 @@ body {
 .cover_button {
   z-index: 2;
   width: 256px;
-  height: 51px;
   border: 1px solid rgb(255 255 255);
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
   color: rgb(255 255 255);
   font-family: Raleway;
   font-weight: 500;
@@ -265,7 +251,10 @@ body {
 }
 
 .lots__look-more-link {
-  padding: 33px 40px 0px;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 32px;
+  margin-left: 40px;
   color: rgb(0 0 0);
   font-family: Raleway;
   font-weight: 400;
@@ -351,8 +340,7 @@ body {
 .footer__address {
   grid-area: header__address;
   justify-self: start;
-  max-width: 264.57px;
-  height: 98px;
+  max-width: 240px;
 }
 
 .footer__menu {
@@ -365,7 +353,6 @@ body {
   align-items: center;
   padding-top: 3px;
   list-style: none;
-  transform: translateX(-16px);
 }
 
 .footer__menu-list-item {
